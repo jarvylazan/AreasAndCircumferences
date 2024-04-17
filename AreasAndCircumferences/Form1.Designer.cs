@@ -36,29 +36,32 @@
             // 
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Triangle", "Rectangle", "Circle" });
-            comboBox1.Location = new Point(179, 39);
+            comboBox1.Location = new Point(332, 83);
+            comboBox1.Margin = new Padding(6, 6, 6, 6);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
+            comboBox1.Size = new Size(221, 40);
             comboBox1.TabIndex = 1;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(179, 9);
+            label1.Location = new Point(332, 19);
+            label1.Margin = new Padding(6, 0, 6, 0);
             label1.Name = "label1";
-            label1.Size = new Size(134, 15);
+            label1.Size = new Size(277, 32);
             label1.TabIndex = 2;
             label1.Text = "Select one of the shapes";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(506, 450);
+            ClientSize = new Size(940, 960);
             Controls.Add(label1);
             Controls.Add(comboBox1);
+            Margin = new Padding(6, 6, 6, 6);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Areas And Circumferences";
             ResumeLayout(false);
             PerformLayout();
         }

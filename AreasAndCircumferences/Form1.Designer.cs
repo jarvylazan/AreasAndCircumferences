@@ -28,31 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
-            listBox1 = new ListBox();
+            comboBox1 = new ComboBox();
+            label1 = new Label();
             SuspendLayout();
             // 
-            // listBox1
+            // comboBox1
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(158, 95);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(85, 19);
-            listBox1.TabIndex = 0;
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Triangle", "Rectangle", "Circle" });
+            comboBox1.Location = new Point(179, 39);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(121, 23);
+            comboBox1.TabIndex = 1;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(179, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(134, 15);
+            label1.TabIndex = 2;
+            label1.Text = "Select one of the shapes";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(506, 450);
-            Controls.Add(listBox1);
+            Controls.Add(label1);
+            Controls.Add(comboBox1);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private ListBox listBox1;
+        private ComboBox comboBox1;
+        private Label label1;
     }
 }

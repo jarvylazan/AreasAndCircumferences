@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace AreasAndCircumferences
 {
-    internal class Shape
-    {
-    }
+   public abstract class Shape
+   {
+        public abstract double Area();
+        public abstract double Circumference();
+   }
+    
 }

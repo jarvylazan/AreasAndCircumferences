@@ -4,7 +4,7 @@ namespace AreasAndCircumferences
     {
         public Form1()
         {
-            InitializeComponent();
+            this.InitializeComponent();
         }
     }
 }

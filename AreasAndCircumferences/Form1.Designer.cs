@@ -7,7 +7,7 @@
         private GroupBox rectangleGroupBox;
         private GroupBox circleGroupBox;
         private GroupBox triangleGroupBox;
-        private TextBox rectangleLenghtTextBox;
+        private TextBox rectangleLengthTextBox;
         private TextBox rectangleWidthTextBox;
         private TextBox circleRadiusTextBox;
         private TextBox triangleSideATextBox;
@@ -53,15 +53,9 @@
             rectanglePerimeterLabel = new Label();
             rectangleResultButton = new Button();
             rectangleLengthLabel = new Label();
-            rectangleLenghtTextBox = new TextBox();
+            rectangleLengthTextBox = new TextBox();
             rectangleWidthLabel = new Label();
             rectangleWidthTextBox = new TextBox();
-            circleGroupBox = new GroupBox();
-            circumferenceLabel = new Label();
-            circleAreaLabel = new Label();
-            circleResultLabel = new Button();
-            circleRadiusLabel = new Label();
-            circleRadiusTextBox = new TextBox();
             triangleGroupBox = new GroupBox();
             triangleAreaLabel = new Label();
             trianglePerimeterLabel = new Label();
@@ -72,29 +66,35 @@
             triangleSideBTextBox = new TextBox();
             triangleSideCLabel = new Label();
             triangleSideCTextBox = new TextBox();
+            circleGroupBox = new GroupBox();
+            circumferenceLabel = new Label();
+            circleAreaLabel = new Label();
+            circleResultButton = new Button();
+            circleRadiusLabel = new Label();
+            circleRadiusTextBox = new TextBox();
             rectangleGroupBox.SuspendLayout();
-            circleGroupBox.SuspendLayout();
             triangleGroupBox.SuspendLayout();
+            circleGroupBox.SuspendLayout();
             SuspendLayout();
             // 
             // choiceComboBox
             // 
             choiceComboBox.FormattingEnabled = true;
             choiceComboBox.Items.AddRange(new object[] { "Triangle", "Rectangle", "Circle" });
-            choiceComboBox.Location = new Point(160, 45);
-            choiceComboBox.Margin = new Padding(2, 1, 2, 1);
+            choiceComboBox.Location = new Point(332, 52);
+            choiceComboBox.Margin = new Padding(4, 2, 4, 2);
             choiceComboBox.Name = "choiceComboBox";
-            choiceComboBox.Size = new Size(128, 23);
+            choiceComboBox.Size = new Size(234, 40);
             choiceComboBox.TabIndex = 0;
             choiceComboBox.SelectedIndexChanged += ChoiceComboBox_SelectedIndexChanged;
             // 
             // choiceLabel
             // 
             choiceLabel.AutoSize = true;
-            choiceLabel.Location = new Point(43, 26);
-            choiceLabel.Margin = new Padding(2, 0, 2, 0);
+            choiceLabel.Location = new Point(80, 55);
+            choiceLabel.Margin = new Padding(4, 0, 4, 0);
             choiceLabel.Name = "choiceLabel";
-            choiceLabel.Size = new Size(81, 15);
+            choiceLabel.Size = new Size(167, 32);
             choiceLabel.TabIndex = 1;
             choiceLabel.Text = "Select a shape";
             // 
@@ -104,14 +104,14 @@
             rectangleGroupBox.Controls.Add(rectanglePerimeterLabel);
             rectangleGroupBox.Controls.Add(rectangleResultButton);
             rectangleGroupBox.Controls.Add(rectangleLengthLabel);
-            rectangleGroupBox.Controls.Add(rectangleLenghtTextBox);
+            rectangleGroupBox.Controls.Add(rectangleLengthTextBox);
             rectangleGroupBox.Controls.Add(rectangleWidthLabel);
             rectangleGroupBox.Controls.Add(rectangleWidthTextBox);
-            rectangleGroupBox.Location = new Point(11, 70);
-            rectangleGroupBox.Margin = new Padding(2, 1, 2, 1);
+            rectangleGroupBox.Location = new Point(42, 119);
+            rectangleGroupBox.Margin = new Padding(4, 2, 4, 2);
             rectangleGroupBox.Name = "rectangleGroupBox";
-            rectangleGroupBox.Padding = new Padding(2, 1, 2, 1);
-            rectangleGroupBox.Size = new Size(277, 159);
+            rectangleGroupBox.Padding = new Padding(4, 2, 4, 2);
+            rectangleGroupBox.Size = new Size(514, 339);
             rectangleGroupBox.TabIndex = 2;
             rectangleGroupBox.TabStop = false;
             rectangleGroupBox.Text = "Rectangle Dimensions";
@@ -120,24 +120,27 @@
             // rectangleAreaLabel
             // 
             rectangleAreaLabel.AutoSize = true;
-            rectangleAreaLabel.Location = new Point(144, 135);
+            rectangleAreaLabel.Location = new Point(267, 288);
+            rectangleAreaLabel.Margin = new Padding(6, 0, 6, 0);
             rectangleAreaLabel.Name = "rectangleAreaLabel";
-            rectangleAreaLabel.Size = new Size(0, 15);
+            rectangleAreaLabel.Size = new Size(0, 32);
             rectangleAreaLabel.TabIndex = 6;
             // 
             // rectanglePerimeterLabel
             // 
             rectanglePerimeterLabel.AutoSize = true;
-            rectanglePerimeterLabel.Location = new Point(144, 105);
+            rectanglePerimeterLabel.Location = new Point(267, 224);
+            rectanglePerimeterLabel.Margin = new Padding(6, 0, 6, 0);
             rectanglePerimeterLabel.Name = "rectanglePerimeterLabel";
-            rectanglePerimeterLabel.Size = new Size(0, 15);
+            rectanglePerimeterLabel.Size = new Size(0, 32);
             rectanglePerimeterLabel.TabIndex = 5;
             // 
             // rectangleResultButton
             // 
-            rectangleResultButton.Location = new Point(38, 115);
+            rectangleResultButton.Location = new Point(71, 245);
+            rectangleResultButton.Margin = new Padding(6);
             rectangleResultButton.Name = "rectangleResultButton";
-            rectangleResultButton.Size = new Size(75, 23);
+            rectangleResultButton.Size = new Size(139, 49);
             rectangleResultButton.TabIndex = 4;
             rectangleResultButton.Text = "Calculate";
             rectangleResultButton.UseVisualStyleBackColor = true;
@@ -146,100 +149,38 @@
             // rectangleLengthLabel
             // 
             rectangleLengthLabel.AutoSize = true;
-            rectangleLengthLabel.Location = new Point(22, 39);
-            rectangleLengthLabel.Margin = new Padding(2, 0, 2, 0);
+            rectangleLengthLabel.Location = new Point(41, 83);
+            rectangleLengthLabel.Margin = new Padding(4, 0, 4, 0);
             rectangleLengthLabel.Name = "rectangleLengthLabel";
-            rectangleLengthLabel.Size = new Size(47, 15);
+            rectangleLengthLabel.Size = new Size(93, 32);
             rectangleLengthLabel.TabIndex = 0;
             rectangleLengthLabel.Text = "Length:";
             // 
-            // rectangleLenghtTextBox
+            // rectangleLengthTextBox
             // 
-            rectangleLenghtTextBox.Location = new Point(123, 36);
-            rectangleLenghtTextBox.Margin = new Padding(2, 1, 2, 1);
-            rectangleLenghtTextBox.Name = "rectangleLenghtTextBox";
-            rectangleLenghtTextBox.Size = new Size(56, 23);
-            rectangleLenghtTextBox.TabIndex = 1;
+            rectangleLengthTextBox.Location = new Point(228, 77);
+            rectangleLengthTextBox.Margin = new Padding(4, 2, 4, 2);
+            rectangleLengthTextBox.Name = "rectangleLengthTextBox";
+            rectangleLengthTextBox.Size = new Size(200, 39);
+            rectangleLengthTextBox.TabIndex = 1;
             // 
             // rectangleWidthLabel
             // 
             rectangleWidthLabel.AutoSize = true;
-            rectangleWidthLabel.Location = new Point(22, 72);
-            rectangleWidthLabel.Margin = new Padding(2, 0, 2, 0);
+            rectangleWidthLabel.Location = new Point(41, 154);
+            rectangleWidthLabel.Margin = new Padding(4, 0, 4, 0);
             rectangleWidthLabel.Name = "rectangleWidthLabel";
-            rectangleWidthLabel.Size = new Size(42, 15);
+            rectangleWidthLabel.Size = new Size(83, 32);
             rectangleWidthLabel.TabIndex = 2;
             rectangleWidthLabel.Text = "Width:";
             // 
             // rectangleWidthTextBox
             // 
-            rectangleWidthTextBox.Location = new Point(123, 69);
-            rectangleWidthTextBox.Margin = new Padding(2, 1, 2, 1);
+            rectangleWidthTextBox.Location = new Point(228, 147);
+            rectangleWidthTextBox.Margin = new Padding(4, 2, 4, 2);
             rectangleWidthTextBox.Name = "rectangleWidthTextBox";
-            rectangleWidthTextBox.Size = new Size(56, 23);
+            rectangleWidthTextBox.Size = new Size(200, 39);
             rectangleWidthTextBox.TabIndex = 3;
-            // 
-            // circleGroupBox
-            // 
-            circleGroupBox.Controls.Add(circumferenceLabel);
-            circleGroupBox.Controls.Add(circleAreaLabel);
-            circleGroupBox.Controls.Add(circleResultLabel);
-            circleGroupBox.Controls.Add(circleRadiusLabel);
-            circleGroupBox.Controls.Add(circleRadiusTextBox);
-            circleGroupBox.Location = new Point(407, 214);
-            circleGroupBox.Margin = new Padding(4, 2, 4, 2);
-            circleGroupBox.Name = "circleGroupBox";
-            circleGroupBox.Padding = new Padding(4, 2, 4, 2);
-            circleGroupBox.Size = new Size(486, 254);
-            circleGroupBox.TabIndex = 3;
-            circleGroupBox.TabStop = false;
-            circleGroupBox.Text = "Circle Dimensions";
-            circleGroupBox.Visible = false;
-            // 
-            // circumferenceLabel
-            // 
-            circumferenceLabel.AutoSize = true;
-            circumferenceLabel.Location = new Point(237, 145);
-            circumferenceLabel.Name = "circumferenceLabel";
-            circumferenceLabel.Size = new Size(0, 32);
-            circumferenceLabel.TabIndex = 12;
-            // 
-            // circleAreaLabel
-            // 
-            circleAreaLabel.AutoSize = true;
-            circleAreaLabel.Location = new Point(237, 201);
-            circleAreaLabel.Name = "circleAreaLabel";
-            circleAreaLabel.Size = new Size(0, 32);
-            circleAreaLabel.TabIndex = 11;
-            // 
-            // circleResultLabel
-            // 
-            circleResultLabel.Location = new Point(33, 137);
-            circleResultLabel.Margin = new Padding(6);
-            circleResultLabel.Name = "circleResultLabel";
-            circleResultLabel.Size = new Size(139, 49);
-            circleResultLabel.TabIndex = 10;
-            circleResultLabel.Text = "Calculate";
-            circleResultLabel.UseVisualStyleBackColor = true;
-            circleResultLabel.Click += CircleResultLabel_Click;
-            // 
-            // circleRadiusLabel
-            // 
-            circleRadiusLabel.AutoSize = true;
-            circleRadiusLabel.Location = new Point(18, 40);
-            circleRadiusLabel.Margin = new Padding(2, 0, 2, 0);
-            circleRadiusLabel.Name = "circleRadiusLabel";
-            circleRadiusLabel.Size = new Size(45, 15);
-            circleRadiusLabel.TabIndex = 0;
-            circleRadiusLabel.Text = "Radius:";
-            // 
-            // circleRadiusTextBox
-            // 
-            circleRadiusTextBox.Location = new Point(115, 38);
-            circleRadiusTextBox.Margin = new Padding(2, 1, 2, 1);
-            circleRadiusTextBox.Name = "circleRadiusTextBox";
-            circleRadiusTextBox.Size = new Size(56, 23);
-            circleRadiusTextBox.TabIndex = 1;
             // 
             // triangleGroupBox
             // 
@@ -252,11 +193,11 @@
             triangleGroupBox.Controls.Add(triangleSideBTextBox);
             triangleGroupBox.Controls.Add(triangleSideCLabel);
             triangleGroupBox.Controls.Add(triangleSideCTextBox);
-            triangleGroupBox.Location = new Point(53, 231);
-            triangleGroupBox.Margin = new Padding(2, 1, 2, 1);
+            triangleGroupBox.Location = new Point(31, 110);
+            triangleGroupBox.Margin = new Padding(4, 2, 4, 2);
             triangleGroupBox.Name = "triangleGroupBox";
-            triangleGroupBox.Padding = new Padding(2, 1, 2, 1);
-            triangleGroupBox.Size = new Size(328, 199);
+            triangleGroupBox.Padding = new Padding(4, 2, 4, 2);
+            triangleGroupBox.Size = new Size(609, 425);
             triangleGroupBox.TabIndex = 4;
             triangleGroupBox.TabStop = false;
             triangleGroupBox.Text = "Triangle Dimensions";
@@ -265,26 +206,27 @@
             // triangleAreaLabel
             // 
             triangleAreaLabel.AutoSize = true;
-            triangleAreaLabel.Location = new Point(137, 163);
-            triangleAreaLabel.Margin = new Padding(2, 0, 2, 0);
+            triangleAreaLabel.Location = new Point(254, 348);
+            triangleAreaLabel.Margin = new Padding(4, 0, 4, 0);
             triangleAreaLabel.Name = "triangleAreaLabel";
-            triangleAreaLabel.Size = new Size(0, 15);
+            triangleAreaLabel.Size = new Size(0, 32);
             triangleAreaLabel.TabIndex = 10;
             // 
             // trianglePerimeterLabel
             // 
             trianglePerimeterLabel.AutoSize = true;
-            trianglePerimeterLabel.Location = new Point(137, 131);
-            trianglePerimeterLabel.Margin = new Padding(2, 0, 2, 0);
+            trianglePerimeterLabel.Location = new Point(254, 279);
+            trianglePerimeterLabel.Margin = new Padding(4, 0, 4, 0);
             trianglePerimeterLabel.Name = "trianglePerimeterLabel";
-            trianglePerimeterLabel.Size = new Size(0, 15);
+            trianglePerimeterLabel.Size = new Size(0, 32);
             trianglePerimeterLabel.TabIndex = 5;
             // 
             // triangleResultButton
             // 
-            triangleResultButton.Location = new Point(7, 123);
+            triangleResultButton.Location = new Point(13, 262);
+            triangleResultButton.Margin = new Padding(6);
             triangleResultButton.Name = "triangleResultButton";
-            triangleResultButton.Size = new Size(75, 23);
+            triangleResultButton.Size = new Size(139, 49);
             triangleResultButton.TabIndex = 9;
             triangleResultButton.Text = "Calculate";
             triangleResultButton.UseVisualStyleBackColor = true;
@@ -293,76 +235,140 @@
             // triangleSideALabel
             // 
             triangleSideALabel.AutoSize = true;
-            triangleSideALabel.Location = new Point(3, 30);
-            triangleSideALabel.Margin = new Padding(2, 0, 2, 0);
+            triangleSideALabel.Location = new Point(6, 64);
+            triangleSideALabel.Margin = new Padding(4, 0, 4, 0);
             triangleSideALabel.Name = "triangleSideALabel";
-            triangleSideALabel.Size = new Size(43, 15);
+            triangleSideALabel.Size = new Size(87, 32);
             triangleSideALabel.TabIndex = 0;
             triangleSideALabel.Text = "Side A:";
             // 
             // triangleSideATextBox
             // 
-            triangleSideATextBox.Location = new Point(120, 29);
-            triangleSideATextBox.Margin = new Padding(2, 1, 2, 1);
+            triangleSideATextBox.Location = new Point(223, 62);
+            triangleSideATextBox.Margin = new Padding(4, 2, 4, 2);
             triangleSideATextBox.Name = "triangleSideATextBox";
-            triangleSideATextBox.Size = new Size(56, 23);
+            triangleSideATextBox.Size = new Size(200, 39);
             triangleSideATextBox.TabIndex = 1;
             // 
             // triangleSideBLabel
             // 
             triangleSideBLabel.AutoSize = true;
-            triangleSideBLabel.Location = new Point(3, 58);
-            triangleSideBLabel.Margin = new Padding(2, 0, 2, 0);
+            triangleSideBLabel.Location = new Point(6, 124);
+            triangleSideBLabel.Margin = new Padding(4, 0, 4, 0);
             triangleSideBLabel.Name = "triangleSideBLabel";
-            triangleSideBLabel.Size = new Size(42, 15);
+            triangleSideBLabel.Size = new Size(86, 32);
             triangleSideBLabel.TabIndex = 2;
             triangleSideBLabel.Text = "Side B:";
             // 
             // triangleSideBTextBox
             // 
-            triangleSideBTextBox.Location = new Point(120, 55);
-            triangleSideBTextBox.Margin = new Padding(2, 1, 2, 1);
+            triangleSideBTextBox.Location = new Point(223, 117);
+            triangleSideBTextBox.Margin = new Padding(4, 2, 4, 2);
             triangleSideBTextBox.Name = "triangleSideBTextBox";
-            triangleSideBTextBox.Size = new Size(56, 23);
+            triangleSideBTextBox.Size = new Size(200, 39);
             triangleSideBTextBox.TabIndex = 3;
             // 
             // triangleSideCLabel
             // 
             triangleSideCLabel.AutoSize = true;
-            triangleSideCLabel.Location = new Point(3, 89);
-            triangleSideCLabel.Margin = new Padding(2, 0, 2, 0);
+            triangleSideCLabel.Location = new Point(6, 190);
+            triangleSideCLabel.Margin = new Padding(4, 0, 4, 0);
             triangleSideCLabel.Name = "triangleSideCLabel";
-            triangleSideCLabel.Size = new Size(43, 15);
+            triangleSideCLabel.Size = new Size(87, 32);
             triangleSideCLabel.TabIndex = 4;
             triangleSideCLabel.Text = "Side C:";
             // 
             // triangleSideCTextBox
             // 
-            triangleSideCTextBox.Location = new Point(120, 85);
-            triangleSideCTextBox.Margin = new Padding(2, 1, 2, 1);
+            triangleSideCTextBox.Location = new Point(223, 181);
+            triangleSideCTextBox.Margin = new Padding(4, 2, 4, 2);
             triangleSideCTextBox.Name = "triangleSideCTextBox";
-            triangleSideCTextBox.Size = new Size(56, 23);
+            triangleSideCTextBox.Size = new Size(200, 39);
             triangleSideCTextBox.TabIndex = 5;
+            // 
+            // circleGroupBox
+            // 
+            circleGroupBox.Controls.Add(circumferenceLabel);
+            circleGroupBox.Controls.Add(circleAreaLabel);
+            circleGroupBox.Controls.Add(circleResultButton);
+            circleGroupBox.Controls.Add(circleRadiusLabel);
+            circleGroupBox.Controls.Add(circleRadiusTextBox);
+            circleGroupBox.Location = new Point(31, 137);
+            circleGroupBox.Margin = new Padding(7, 4, 7, 4);
+            circleGroupBox.Name = "circleGroupBox";
+            circleGroupBox.Padding = new Padding(7, 4, 7, 4);
+            circleGroupBox.Size = new Size(559, 317);
+            circleGroupBox.TabIndex = 3;
+            circleGroupBox.TabStop = false;
+            circleGroupBox.Text = "Circle Dimensions";
+            circleGroupBox.Visible = false;
+            // 
+            // circumferenceLabel
+            // 
+            circumferenceLabel.AutoSize = true;
+            circumferenceLabel.Location = new Point(249, 154);
+            circumferenceLabel.Margin = new Padding(6, 0, 6, 0);
+            circumferenceLabel.Name = "circumferenceLabel";
+            circumferenceLabel.Size = new Size(0, 32);
+            circumferenceLabel.TabIndex = 12;
+            // 
+            // circleAreaLabel
+            // 
+            circleAreaLabel.AutoSize = true;
+            circleAreaLabel.Location = new Point(249, 247);
+            circleAreaLabel.Margin = new Padding(6, 0, 6, 0);
+            circleAreaLabel.Name = "circleAreaLabel";
+            circleAreaLabel.Size = new Size(0, 32);
+            circleAreaLabel.TabIndex = 11;
+            // 
+            // circleResultButton
+            // 
+            circleResultButton.Location = new Point(33, 193);
+            circleResultButton.Margin = new Padding(11, 13, 11, 13);
+            circleResultButton.Name = "circleResultButton";
+            circleResultButton.Size = new Size(139, 49);
+            circleResultButton.TabIndex = 10;
+            circleResultButton.Text = "Calculate";
+            circleResultButton.UseVisualStyleBackColor = true;
+            circleResultButton.Click += CircleResultLabel_Click;
+            // 
+            // circleRadiusLabel
+            // 
+            circleRadiusLabel.AutoSize = true;
+            circleRadiusLabel.Location = new Point(33, 85);
+            circleRadiusLabel.Margin = new Padding(4, 0, 4, 0);
+            circleRadiusLabel.Name = "circleRadiusLabel";
+            circleRadiusLabel.Size = new Size(89, 32);
+            circleRadiusLabel.TabIndex = 0;
+            circleRadiusLabel.Text = "Radius:";
+            // 
+            // circleRadiusTextBox
+            // 
+            circleRadiusTextBox.Location = new Point(214, 81);
+            circleRadiusTextBox.Margin = new Padding(4, 2, 4, 2);
+            circleRadiusTextBox.Name = "circleRadiusTextBox";
+            circleRadiusTextBox.Size = new Size(200, 39);
+            circleRadiusTextBox.TabIndex = 1;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(507, 435);
+            ClientSize = new Size(668, 582);
+            Controls.Add(triangleGroupBox);
+            Controls.Add(circleGroupBox);
             Controls.Add(choiceComboBox);
             Controls.Add(choiceLabel);
             Controls.Add(rectangleGroupBox);
-            Controls.Add(circleGroupBox);
-            Controls.Add(triangleGroupBox);
-            Margin = new Padding(2, 1, 2, 1);
+            Margin = new Padding(4, 2, 4, 2);
             Name = "Form1";
             Text = "Areas and Circumferences";
             rectangleGroupBox.ResumeLayout(false);
             rectangleGroupBox.PerformLayout();
-            circleGroupBox.ResumeLayout(false);
-            circleGroupBox.PerformLayout();
             triangleGroupBox.ResumeLayout(false);
             triangleGroupBox.PerformLayout();
+            circleGroupBox.ResumeLayout(false);
+            circleGroupBox.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -371,7 +377,7 @@
         private Button triangleResultButton;
         private Label trianglePerimeterLabel;
         private Label triangleAreaLabel;
-        private Button circleResultLabel;
+        private Button circleResultButton;
         private Label circumferenceLabel;
         private Label circleAreaLabel;
         private Label rectangleAreaLabel;

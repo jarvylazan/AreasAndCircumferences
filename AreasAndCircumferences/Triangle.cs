@@ -14,7 +14,7 @@ namespace AreasAndCircumferences
 
         public Triangle(double side1, double side2, double side3)
         {
-            // The exception if the user inputed a negative number
+            // The exception if the user inputted a negative number
             if (side1 <= 0 || side2 <= 0 || side3 <= 0)
             {
                 throw new ArgumentException("All of the sides must be positive");

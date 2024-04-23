@@ -14,7 +14,7 @@ namespace AreasAndCircumferences
 
         public Rectangle(double length, double width)
         {
-            if (length <= 0 || width <= 0) 
+            if (length <= 0 || width <= 0)
             {
                 throw new ArgumentException("Length and width has to be positive");
             }
@@ -28,7 +28,7 @@ namespace AreasAndCircumferences
             return this.length * this.width;
         }
 
-        public override double Circumference()
+        public override double Perimeter()
         {
             return 2 * (this.length + this.width);
         }

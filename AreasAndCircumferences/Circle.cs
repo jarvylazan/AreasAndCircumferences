@@ -26,7 +26,7 @@ namespace AreasAndCircumferences
             return Math.PI * this.radius * this.radius;
         }
 
-        public override double Circumference()
+        public override double Perimeter()
         {
             return 2 * Math.PI * this.radius;
         }

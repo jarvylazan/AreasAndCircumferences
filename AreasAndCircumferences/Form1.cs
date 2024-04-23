@@ -4,41 +4,41 @@ namespace AreasAndCircumferences
     {
         public Form1()
         {
-            InitializeComponent();
+            this.InitializeComponent();
         }
 
-        private void choiceComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void ChoiceComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             // Hide all group boxes initially
-            rectangleGroupBox.Visible = false;
-            circleGroupBox.Visible = false;
-            triangleGroupBox.Visible = false;
+            this.rectangleGroupBox.Visible = false;
+            this.circleGroupBox.Visible = false;
+            this.triangleGroupBox.Visible = false;
 
             // Show the corresponding group box based on the selection
-            switch (choiceComboBox.SelectedItem.ToString())
+            switch (this.choiceComboBox.SelectedItem.ToString())
             {
                 case "Rectangle":
-                    rectangleGroupBox.Visible = true;
+                    this.rectangleGroupBox.Visible = true;
                     break;
                 case "Circle":
-                    circleGroupBox.Visible = true;
+                    this.circleGroupBox.Visible = true;
                     break;
                 case "Triangle":
-                    triangleGroupBox.Visible = true;
+                    this.triangleGroupBox.Visible = true;
                     break;
             }
         }
 
-        private void resultButton_Click(object sender, EventArgs e)
+        private void ResultButton_Click(object sender, EventArgs e)
         {
             try
             {
-                double side1 = double.Parse(triangleSideATextBox.Text);
-                double side2 = double.Parse(triangleSideBTextBox.Text);
-                double side3 = double.Parse(triangleSideCTextBox.Text);
+                double side1 = double.Parse(this.triangleSideATextBox.Text);
+                double side2 = double.Parse(this.triangleSideBTextBox.Text);
+                double side3 = double.Parse(this.triangleSideCTextBox.Text);
                 Triangle triangle = new Triangle(side1, side2, side3);
-                areaLabel.Text = "Area: " + triangle.Area();
-                circumferenceLabel.Text = "Circumference: " + triangle.Circumference();
+                this.areaLabel.Text = "Area: " + triangle.Area();
+                this.circumferenceLabel.Text = "Circumference: " + triangle.Circumference();
             }
             catch (Exception ex)
             {

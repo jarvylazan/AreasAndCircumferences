@@ -8,9 +8,9 @@ namespace AreasAndCircumferences
 {
     public class Triangle : Shape
     {
-        double side1;
-        double side2;
-        double side3;
+        private readonly double side1;
+        private readonly double side2;
+        private readonly double side3;
 
         public Triangle(double side1, double side2, double side3)
         {
@@ -26,13 +26,13 @@ namespace AreasAndCircumferences
 
         public override double Area()
         {
-            double s = (side1 + side2 + side3) / 2;
-            return Math.Sqrt(s * (s - side1) * (s - side2) * (s - side3));
+            double s = (this.side1 + this.side2 + this.side3) / 2;
+            return Math.Sqrt(s * (s - this.side1) * (s - this.side2) * (s - this.side3));
         }
 
         public override double Circumference()
         {
-            return side1 + side2 + side3;
+            return this.side1 + this.side2 + this.side3;
         }
     }
 }

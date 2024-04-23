@@ -9,23 +9,26 @@ namespace AreasAndCircumferences
 {
     public class Circle : Shape
     {
-        private double radius;
+        private readonly double radius;
+
         public Circle(double radius)
         {
             if (radius <= 0)
             {
                 throw new ArgumentException("Radius has to be positive");
             }
+
             this.radius = radius;
         }
+
         public override double Area()
         {
-            return Math.PI * radius * radius;
+            return Math.PI * this.radius * this.radius;
         }
 
         public override double Circumference()
         {
-            return 2 * Math.PI * radius;
+            return 2 * Math.PI * this.radius;
         }
     }
 }

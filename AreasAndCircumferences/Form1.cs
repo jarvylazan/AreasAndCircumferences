@@ -46,6 +46,23 @@ namespace AreasAndCircumferences
             }
         }
 
+        private void RectangleResultButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double length = double.Parse(this.rectangleLenghtTextBox.Text);
+                double width = double.Parse(this.rectangleWidthTextBox.Text);
+                Rectangle rectangle = new Rectangle(length, width);
+                this.rectangleAreaLabel.Text = "Area: " + rectangle.Area();
+                this.rectanglePerimeterLabel.Text = "Perimeter: " + rectangle.Perimeter();
+                this.trianglePerimeterLabel.Text = "Perimeter: " + triangle.Perimeter();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
         private void CircleResultLabel_Click(object sender, EventArgs e)
         {
             try

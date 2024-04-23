@@ -14,6 +14,7 @@ namespace AreasAndCircumferences
 
         public Rectangle(double length, double width)
         {
+            // The exception if the user inputed a negative number
             if (length <= 0 || width <= 0)
             {
                 throw new ArgumentException("Length and width has to be positive");

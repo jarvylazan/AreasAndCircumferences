@@ -13,6 +13,7 @@ namespace AreasAndCircumferences
 
         public Circle(double radius)
         {
+            // The exception if the user inputed a negative number
             if (radius <= 0)
             {
                 throw new ArgumentException("Radius has to be positive");

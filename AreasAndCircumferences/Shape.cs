@@ -10,6 +10,6 @@ namespace AreasAndCircumferences
    {
         public abstract double Area();
 
-        public abstract double Circumference();
+        public abstract double Perimeter();
    }
 }

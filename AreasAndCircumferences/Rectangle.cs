@@ -29,7 +29,7 @@ namespace AreasAndCircumferences
             return this.length * this.width;
         }
 
-        public override double Circumference()
+        public override double Perimeter()
         {
             return 2 * (this.length + this.width);
         }

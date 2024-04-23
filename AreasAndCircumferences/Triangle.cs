@@ -31,7 +31,7 @@ namespace AreasAndCircumferences
             return Math.Sqrt(s * (s - this.side1) * (s - this.side2) * (s - this.side3));
         }
 
-        public override double Circumference()
+        public override double Perimeter()
         {
             return this.side1 + this.side2 + this.side3;
         }

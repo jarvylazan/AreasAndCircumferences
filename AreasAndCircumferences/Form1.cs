@@ -29,7 +29,7 @@ namespace AreasAndCircumferences
             }
         }
 
-        private void ResultButton_Click(object sender, EventArgs e)
+        private void TriangleResultButton_Click(object sender, EventArgs e)
         {
             try
             {
@@ -38,7 +38,23 @@ namespace AreasAndCircumferences
                 double side3 = double.Parse(this.triangleSideCTextBox.Text);
                 Triangle triangle = new Triangle(side1, side2, side3);
                 this.triangleAreaLabel.Text = "Area: " + triangle.Area();
-                this.trianglePerimeterLabel.Text = "Circumference: " + triangle.Circumference();
+                this.trianglePerimeterLabel.Text = "Perimeter: " + triangle.Perimeter();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void RectangleResultButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double length = double.Parse(this.rectangleLenghtTextBox.Text);
+                double width = double.Parse(this.rectangleWidthTextBox.Text);
+                Rectangle rectangle = new Rectangle(length, width);
+                this.rectangleAreaLabel.Text = "Area: " + rectangle.Area();
+                this.rectanglePerimeterLabel.Text = "Perimeter: " + rectangle.Perimeter();
             }
             catch (Exception ex)
             {

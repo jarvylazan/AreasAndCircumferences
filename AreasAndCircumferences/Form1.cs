@@ -28,5 +28,22 @@ namespace AreasAndCircumferences
                     break;
             }
         }
+
+        private void resultButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double side1 = double.Parse(triangleSideATextBox.Text);
+                double side2 = double.Parse(triangleSideBTextBox.Text);
+                double side3 = double.Parse(triangleSideCTextBox.Text);
+                Triangle triangle = new Triangle(side1, side2, side3);
+                areaLabel.Text = "Area: " + triangle.Area();
+                circumferenceLabel.Text = "Circumference: " + triangle.Circumference();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

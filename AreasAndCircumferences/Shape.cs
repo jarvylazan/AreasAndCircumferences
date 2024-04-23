@@ -9,7 +9,7 @@ namespace AreasAndCircumferences
    public abstract class Shape
    {
         public abstract double Area();
+
         public abstract double Circumference();
    }
-    
 }

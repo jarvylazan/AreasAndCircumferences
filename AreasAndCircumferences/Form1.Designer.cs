@@ -72,10 +72,10 @@
             SuspendLayout();
             // 
             // choiceComboBox
-            //
+            // 
             choiceComboBox.FormattingEnabled = true;
             choiceComboBox.Items.AddRange(new object[] { "Triangle", "Rectangle", "Circle" });
-            choiceComboBox.Location = new Point(405, 47);
+            choiceComboBox.Location = new Point(297, 96);
             choiceComboBox.Margin = new Padding(4, 2, 4, 2);
             choiceComboBox.Name = "choiceComboBox";
             choiceComboBox.Size = new Size(234, 40);
@@ -187,11 +187,11 @@
             triangleGroupBox.Controls.Add(triangleSideBTextBox);
             triangleGroupBox.Controls.Add(triangleSideCLabel);
             triangleGroupBox.Controls.Add(triangleSideCTextBox);
-            triangleGroupBox.Location = new Point(487, 434);
+            triangleGroupBox.Location = new Point(288, 434);
             triangleGroupBox.Margin = new Padding(4, 2, 4, 2);
             triangleGroupBox.Name = "triangleGroupBox";
             triangleGroupBox.Padding = new Padding(4, 2, 4, 2);
-            triangleGroupBox.Size = new Size(411, 424);
+            triangleGroupBox.Size = new Size(610, 424);
             triangleGroupBox.TabIndex = 4;
             triangleGroupBox.TabStop = false;
             triangleGroupBox.Text = "Triangle Dimensions";
@@ -291,7 +291,6 @@
             Margin = new Padding(4, 2, 4, 2);
             Name = "Form1";
             Text = "Areas and Circumferences";
-            TransparencyKey = Color.Transparent;
             rectangleGroupBox.ResumeLayout(false);
             rectangleGroupBox.PerformLayout();
             circleGroupBox.ResumeLayout(false);

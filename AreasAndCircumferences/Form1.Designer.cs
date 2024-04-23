@@ -80,7 +80,7 @@
             choiceComboBox.Name = "choiceComboBox";
             choiceComboBox.Size = new Size(128, 23);
             choiceComboBox.TabIndex = 0;
-            choiceComboBox.SelectedIndexChanged += choiceComboBox_SelectedIndexChanged;
+            choiceComboBox.SelectedIndexChanged += ChoiceComboBox_SelectedIndexChanged;
             // 
             // choiceLabel
             // 
@@ -274,7 +274,7 @@
             resultButton.TabIndex = 9;
             resultButton.Text = "Calculate";
             resultButton.UseVisualStyleBackColor = true;
-            resultButton.Click += resultButton_Click;
+            resultButton.Click += ResultButton_Click;
             // 
             // Form1
             // 

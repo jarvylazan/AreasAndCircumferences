@@ -37,8 +37,8 @@ namespace AreasAndCircumferences
                 double side2 = double.Parse(this.triangleSideBTextBox.Text);
                 double side3 = double.Parse(this.triangleSideCTextBox.Text);
                 Triangle triangle = new Triangle(side1, side2, side3);
-                this.circleAreaLabel.Text = "Area: " + triangle.Area();
-                this.circumferenceLabel.Text = "Circumference: " + triangle.Circumference();
+                this.triangleAreaLabel.Text = "Area: " + triangle.Area();
+                this.trianglePerimeterLabel.Text = "Circumference: " + triangle.Circumference();
             }
             catch (Exception ex)
             {

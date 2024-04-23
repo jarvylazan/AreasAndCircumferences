@@ -57,15 +57,16 @@
             circleRadiusLabel = new Label();
             circleRadiusTextBox = new TextBox();
             triangleGroupBox = new GroupBox();
-            circleAreaLabel = new Label();
-            circumferenceLabel = new Label();
-            circleResultButton = new Button();
+            triangleAreaLabel = new Label();
+            trianglePerimeterLabel = new Label();
+            triangleResultButton = new Button();
             triangleSideALabel = new Label();
             triangleSideATextBox = new TextBox();
             triangleSideBLabel = new Label();
             triangleSideBTextBox = new TextBox();
             triangleSideCLabel = new Label();
             triangleSideCTextBox = new TextBox();
+            cri = new Button();
             rectangleGroupBox.SuspendLayout();
             circleGroupBox.SuspendLayout();
             triangleGroupBox.SuspendLayout();
@@ -146,13 +147,14 @@
             // 
             // circleGroupBox
             // 
+            circleGroupBox.Controls.Add(cri);
             circleGroupBox.Controls.Add(circleRadiusLabel);
             circleGroupBox.Controls.Add(circleRadiusTextBox);
             circleGroupBox.Location = new Point(487, 235);
             circleGroupBox.Margin = new Padding(4, 2, 4, 2);
             circleGroupBox.Name = "circleGroupBox";
             circleGroupBox.Padding = new Padding(4, 2, 4, 2);
-            circleGroupBox.Size = new Size(345, 162);
+            circleGroupBox.Size = new Size(371, 233);
             circleGroupBox.TabIndex = 3;
             circleGroupBox.TabStop = false;
             circleGroupBox.Text = "Circle Dimensions";
@@ -178,16 +180,16 @@
             // 
             // triangleGroupBox
             // 
-            triangleGroupBox.Controls.Add(circleAreaLabel);
-            triangleGroupBox.Controls.Add(circumferenceLabel);
-            triangleGroupBox.Controls.Add(circleResultButton);
+            triangleGroupBox.Controls.Add(triangleAreaLabel);
+            triangleGroupBox.Controls.Add(trianglePerimeterLabel);
+            triangleGroupBox.Controls.Add(triangleResultButton);
             triangleGroupBox.Controls.Add(triangleSideALabel);
             triangleGroupBox.Controls.Add(triangleSideATextBox);
             triangleGroupBox.Controls.Add(triangleSideBLabel);
             triangleGroupBox.Controls.Add(triangleSideBTextBox);
             triangleGroupBox.Controls.Add(triangleSideCLabel);
             triangleGroupBox.Controls.Add(triangleSideCTextBox);
-            triangleGroupBox.Location = new Point(288, 434);
+            triangleGroupBox.Location = new Point(99, 493);
             triangleGroupBox.Margin = new Padding(4, 2, 4, 2);
             triangleGroupBox.Name = "triangleGroupBox";
             triangleGroupBox.Padding = new Padding(4, 2, 4, 2);
@@ -197,32 +199,32 @@
             triangleGroupBox.Text = "Triangle Dimensions";
             triangleGroupBox.Visible = false;
             // 
-            // circleAreaLabel
+            // triangleAreaLabel
             // 
-            circleAreaLabel.AutoSize = true;
-            circleAreaLabel.Location = new Point(255, 347);
-            circleAreaLabel.Name = "circleAreaLabel";
-            circleAreaLabel.Size = new Size(0, 32);
-            circleAreaLabel.TabIndex = 10;
+            triangleAreaLabel.AutoSize = true;
+            triangleAreaLabel.Location = new Point(255, 347);
+            triangleAreaLabel.Name = "triangleAreaLabel";
+            triangleAreaLabel.Size = new Size(0, 32);
+            triangleAreaLabel.TabIndex = 10;
             // 
-            // circumferenceLabel
+            // trianglePerimeterLabel
             // 
-            circumferenceLabel.AutoSize = true;
-            circumferenceLabel.Location = new Point(255, 280);
-            circumferenceLabel.Name = "circumferenceLabel";
-            circumferenceLabel.Size = new Size(0, 32);
-            circumferenceLabel.TabIndex = 5;
+            trianglePerimeterLabel.AutoSize = true;
+            trianglePerimeterLabel.Location = new Point(255, 280);
+            trianglePerimeterLabel.Name = "trianglePerimeterLabel";
+            trianglePerimeterLabel.Size = new Size(0, 32);
+            trianglePerimeterLabel.TabIndex = 5;
             // 
-            // circleResultButton
+            // triangleResultButton
             // 
-            circleResultButton.Location = new Point(13, 263);
-            circleResultButton.Margin = new Padding(6);
-            circleResultButton.Name = "circleResultButton";
-            circleResultButton.Size = new Size(139, 49);
-            circleResultButton.TabIndex = 9;
-            circleResultButton.Text = "Calculate";
-            circleResultButton.UseVisualStyleBackColor = true;
-            circleResultButton.Click += ResultButton_Click;
+            triangleResultButton.Location = new Point(13, 263);
+            triangleResultButton.Margin = new Padding(6);
+            triangleResultButton.Name = "triangleResultButton";
+            triangleResultButton.Size = new Size(139, 49);
+            triangleResultButton.TabIndex = 9;
+            triangleResultButton.Text = "Calculate";
+            triangleResultButton.UseVisualStyleBackColor = true;
+            triangleResultButton.Click += ResultButton_Click;
             // 
             // triangleSideALabel
             // 
@@ -278,6 +280,16 @@
             triangleSideCTextBox.Size = new Size(101, 39);
             triangleSideCTextBox.TabIndex = 5;
             // 
+            // cri
+            // 
+            cri.Location = new Point(33, 137);
+            cri.Margin = new Padding(6);
+            cri.Name = "cri";
+            cri.Size = new Size(139, 49);
+            cri.TabIndex = 10;
+            cri.Text = "Calculate";
+            cri.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
@@ -302,8 +314,9 @@
         }
 
         #endregion
-        private Button circleResultButton;
-        private Label circumferenceLabel;
-        private Label circleAreaLabel;
+        private Button triangleResultButton;
+        private Label trianglePerimeterLabel;
+        private Label triangleAreaLabel;
+        private Button cri;
     }
 }

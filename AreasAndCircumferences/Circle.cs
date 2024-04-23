@@ -22,7 +22,6 @@ namespace AreasAndCircumferences
             this.radius = radius;
         }
 
-       // Taking the Area from Shape.cs and overriding it to circle.cs to do the math
         public override double Area()
         {
             return Math.PI * this.radius * this.radius;

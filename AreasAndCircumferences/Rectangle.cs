@@ -9,27 +9,28 @@ namespace AreasAndCircumferences
 {
     public class Rectangle : Shape
     {
-        private double length;
-        private double width;
+        private readonly double length;
+        private readonly double width;
 
         public Rectangle(double length, double width)
         {
-            if (length <= 0 || width <= 0) 
+            if (length <= 0 || width <= 0)
             {
                 throw new ArgumentException("Length and width has to be positive");
             }
+
             this.length = length;
             this.width = width;
         }
 
         public override double Area()
         {
-            return length * width;
+            return this.length * this.width;
         }
 
-        public override double Circumference()
+        public override double Perimeter()
         {
-            return 2 * (length + width);
+            return 2 * (this.length + this.width);
         }
     }
 }

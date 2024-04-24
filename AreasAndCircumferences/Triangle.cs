@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿// <copyright file="Triangle.cs" company="Alain Junior McCutcheon">
+// Copyright (c) Alain Junior McCutcheon. All rights reserved.
+// </copyright>
 
 namespace AreasAndCircumferences
 {
@@ -25,12 +23,14 @@ namespace AreasAndCircumferences
             this.side3 = side3;
         }
 
+        //  Calculate area
         public override double Area()
         {
             double s = (this.side1 + this.side2 + this.side3) / 2;
             return Math.Sqrt(s * (s - this.side1) * (s - this.side2) * (s - this.side3));
         }
 
+        // Calculate perimeter
         public override double Perimeter()
         {
             return this.side1 + this.side2 + this.side3;

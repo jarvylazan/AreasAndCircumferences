@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿// <copyright file="Rectangle.cs" company="Alain Junior McCutcheon">
+// Copyright (c) Alain Junior McCutcheon. All rights reserved.
+// </copyright>
 
 namespace AreasAndCircumferences
 {
@@ -12,6 +9,7 @@ namespace AreasAndCircumferences
         private readonly double length;
         private readonly double width;
 
+        // Constructor
         public Rectangle(double length, double width)
         {
             // The exception if the user inputed a negative number
@@ -24,11 +22,13 @@ namespace AreasAndCircumferences
             this.width = width;
         }
 
+        // Calculate area
         public override double Area()
         {
             return this.length * this.width;
         }
 
+        // Calculate perimeter
         public override double Perimeter()
         {
             return 2 * (this.length + this.width);

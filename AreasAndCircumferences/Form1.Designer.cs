@@ -223,7 +223,7 @@
             // 
             // triangleResultButton
             // 
-            triangleResultButton.Location = new Point(13, 262);
+            triangleResultButton.Location = new Point(52, 299);
             triangleResultButton.Margin = new Padding(6);
             triangleResultButton.Name = "triangleResultButton";
             triangleResultButton.Size = new Size(139, 49);
@@ -235,7 +235,7 @@
             // triangleSideALabel
             // 
             triangleSideALabel.AutoSize = true;
-            triangleSideALabel.Location = new Point(6, 64);
+            triangleSideALabel.Location = new Point(86, 68);
             triangleSideALabel.Margin = new Padding(4, 0, 4, 0);
             triangleSideALabel.Name = "triangleSideALabel";
             triangleSideALabel.Size = new Size(87, 32);
@@ -244,7 +244,7 @@
             // 
             // triangleSideATextBox
             // 
-            triangleSideATextBox.Location = new Point(223, 62);
+            triangleSideATextBox.Location = new Point(335, 61);
             triangleSideATextBox.Margin = new Padding(4, 2, 4, 2);
             triangleSideATextBox.Name = "triangleSideATextBox";
             triangleSideATextBox.Size = new Size(200, 39);
@@ -253,7 +253,7 @@
             // triangleSideBLabel
             // 
             triangleSideBLabel.AutoSize = true;
-            triangleSideBLabel.Location = new Point(6, 124);
+            triangleSideBLabel.Location = new Point(86, 128);
             triangleSideBLabel.Margin = new Padding(4, 0, 4, 0);
             triangleSideBLabel.Name = "triangleSideBLabel";
             triangleSideBLabel.Size = new Size(86, 32);
@@ -262,7 +262,7 @@
             // 
             // triangleSideBTextBox
             // 
-            triangleSideBTextBox.Location = new Point(223, 117);
+            triangleSideBTextBox.Location = new Point(335, 121);
             triangleSideBTextBox.Margin = new Padding(4, 2, 4, 2);
             triangleSideBTextBox.Name = "triangleSideBTextBox";
             triangleSideBTextBox.Size = new Size(200, 39);
@@ -271,7 +271,7 @@
             // triangleSideCLabel
             // 
             triangleSideCLabel.AutoSize = true;
-            triangleSideCLabel.Location = new Point(6, 190);
+            triangleSideCLabel.Location = new Point(86, 186);
             triangleSideCLabel.Margin = new Padding(4, 0, 4, 0);
             triangleSideCLabel.Name = "triangleSideCLabel";
             triangleSideCLabel.Size = new Size(87, 32);
@@ -280,7 +280,7 @@
             // 
             // triangleSideCTextBox
             // 
-            triangleSideCTextBox.Location = new Point(223, 181);
+            triangleSideCTextBox.Location = new Point(335, 183);
             triangleSideCTextBox.Margin = new Padding(4, 2, 4, 2);
             triangleSideCTextBox.Name = "triangleSideCTextBox";
             triangleSideCTextBox.Size = new Size(200, 39);
@@ -362,7 +362,7 @@
             Controls.Add(rectangleGroupBox);
             Margin = new Padding(4, 2, 4, 2);
             Name = "Form1";
-            Text = "Areas and Circumferences";
+            Text = "Area and Circumference Calculator";
             rectangleGroupBox.ResumeLayout(false);
             rectangleGroupBox.PerformLayout();
             triangleGroupBox.ResumeLayout(false);
